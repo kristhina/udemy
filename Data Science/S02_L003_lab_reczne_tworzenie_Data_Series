@@ -1,0 +1,120 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt\n",
+    "import math"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": "0       Monday\n1      Tuesday\n2    Wednesday\n3     Thursday\n4       Friday\n5     Saturday\n6       Sunday\ndtype: object"
+     },
+     "metadata": {},
+     "execution_count": 6
+    }
+   ],
+   "source": [
+    "weekdaysSeries = pd.Series(weekdays)\n",
+    "weekdaysSeries"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": "0    False\n1    False\n2    False\n3    False\n4    False\n5     True\n6     True\ndtype: bool"
+     },
+     "metadata": {},
+     "execution_count": 7
+    }
+   ],
+   "source": [
+    "freeDays = [False, False, False, False, False, True, True]\n",
+    "freeDaysSeries = pd.Series(freeDays)\n",
+    "freeDaysSeries"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "holidays = {\"New Year\" : \"2018-01-01\", \"Epiphany\" : \"2018-01-06\", \"Easter\" : \"2018-04-01\"}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "execute_result",
+     "data": {
+      "text/plain": "New Year    2018-01-01\nEpiphany    2018-01-06\nEaster      2018-04-01\ndtype: object"
+     },
+     "metadata": {},
+     "execution_count": 10
+    }
+   ],
+   "source": [
+    "holidaysSeries = pd.Series(holidays)\n",
+    "holidaysSeries"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.2-final"
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python38264bitdatasciencef2t2jzuxvenv755777717192484c92e98af808cd61d4",
+   "display_name": "Python 3.8.2 64-bit ('Data_Science-f2T2jZux': venv)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
